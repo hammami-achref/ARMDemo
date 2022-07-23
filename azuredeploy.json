@@ -31,11 +31,11 @@
                 "displayName": "webApp1"
             },
             "dependsOn": [
-                "[resourceId('Microsoft.Web/serverfarms', 'appServicePlan1')]"
+                "Microsoft.Web/serverfarms/appServicePlan1"
             ],
             "properties": {
                 "name": "webApp1",
-                "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', 'appServicePlan1')]"
+                "serverFarmId": "[resourceId('Microsoft.Web/serverfarms/', 'appServicePlan1')]"
             }
         },
         {
